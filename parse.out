@@ -1,0 +1,241 @@
+0  *ast.File {
+     1  .  Package: main.go:1:1
+     2  .  Name: *ast.Ident {
+     3  .  .  NamePos: main.go:1:9
+     4  .  .  Name: "main"
+     5  .  }
+     6  .  Decls: []ast.Decl (len = 4) {
+     7  .  .  0: *ast.GenDecl {
+     8  .  .  .  TokPos: main.go:3:1
+     9  .  .  .  Tok: import
+    10  .  .  .  Lparen: main.go:3:8
+    11  .  .  .  Specs: []ast.Spec (len = 1) {
+    12  .  .  .  .  0: *ast.ImportSpec {
+    13  .  .  .  .  .  Path: *ast.BasicLit {
+    14  .  .  .  .  .  .  ValuePos: main.go:4:2
+    15  .  .  .  .  .  .  Kind: STRING
+    16  .  .  .  .  .  .  Value: "\"fmt\""
+    17  .  .  .  .  .  }
+    18  .  .  .  .  .  EndPos: -
+    19  .  .  .  .  }
+    20  .  .  .  }
+    21  .  .  .  Rparen: main.go:5:1
+    22  .  .  }
+    23  .  .  1: *ast.GenDecl {
+    24  .  .  .  TokPos: main.go:7:1
+    25  .  .  .  Tok: type
+    26  .  .  .  Lparen: -
+    27  .  .  .  Specs: []ast.Spec (len = 1) {
+    28  .  .  .  .  0: *ast.TypeSpec {
+    29  .  .  .  .  .  Name: *ast.Ident {
+    30  .  .  .  .  .  .  NamePos: main.go:7:6
+    31  .  .  .  .  .  .  Name: "Greeter"
+    32  .  .  .  .  .  .  Obj: *ast.Object {
+    33  .  .  .  .  .  .  .  Kind: type
+    34  .  .  .  .  .  .  .  Name: "Greeter"
+    35  .  .  .  .  .  .  .  Decl: *(obj @ 28)
+    36  .  .  .  .  .  .  }
+    37  .  .  .  .  .  }
+    38  .  .  .  .  .  Assign: -
+    39  .  .  .  .  .  Type: *ast.StructType {
+    40  .  .  .  .  .  .  Struct: main.go:7:14
+    41  .  .  .  .  .  .  Fields: *ast.FieldList {
+    42  .  .  .  .  .  .  .  Opening: main.go:7:21
+    43  .  .  .  .  .  .  .  List: []*ast.Field (len = 1) {
+    44  .  .  .  .  .  .  .  .  0: *ast.Field {
+    45  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+    46  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+    47  .  .  .  .  .  .  .  .  .  .  .  NamePos: main.go:8:2
+    48  .  .  .  .  .  .  .  .  .  .  .  Name: "helloPhrase"
+    49  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+    50  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+    51  .  .  .  .  .  .  .  .  .  .  .  .  Name: "helloPhrase"
+    52  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 44)
+    53  .  .  .  .  .  .  .  .  .  .  .  }
+    54  .  .  .  .  .  .  .  .  .  .  }
+    55  .  .  .  .  .  .  .  .  .  }
+    56  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+    57  .  .  .  .  .  .  .  .  .  .  NamePos: main.go:8:14
+    58  .  .  .  .  .  .  .  .  .  .  Name: "string"
+    59  .  .  .  .  .  .  .  .  .  }
+    60  .  .  .  .  .  .  .  .  }
+    61  .  .  .  .  .  .  .  }
+    62  .  .  .  .  .  .  .  Closing: main.go:9:1
+    63  .  .  .  .  .  .  }
+    64  .  .  .  .  .  .  Incomplete: false
+    65  .  .  .  .  .  }
+    66  .  .  .  .  }
+    67  .  .  .  }
+    68  .  .  .  Rparen: -
+    69  .  .  }
+    70  .  .  2: *ast.FuncDecl {
+    71  .  .  .  Recv: *ast.FieldList {
+    72  .  .  .  .  Opening: main.go:11:6
+    73  .  .  .  .  List: []*ast.Field (len = 1) {
+    74  .  .  .  .  .  0: *ast.Field {
+    75  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+    76  .  .  .  .  .  .  .  0: *ast.Ident {
+    77  .  .  .  .  .  .  .  .  NamePos: main.go:11:7
+    78  .  .  .  .  .  .  .  .  Name: "g"
+    79  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+    80  .  .  .  .  .  .  .  .  .  Kind: var
+    81  .  .  .  .  .  .  .  .  .  Name: "g"
+    82  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 74)
+    83  .  .  .  .  .  .  .  .  }
+    84  .  .  .  .  .  .  .  }
+    85  .  .  .  .  .  .  }
+    86  .  .  .  .  .  .  Type: *ast.Ident {
+    87  .  .  .  .  .  .  .  NamePos: main.go:11:9
+    88  .  .  .  .  .  .  .  Name: "Greeter"
+    89  .  .  .  .  .  .  .  Obj: *(obj @ 32)
+    90  .  .  .  .  .  .  }
+    91  .  .  .  .  .  }
+    92  .  .  .  .  }
+    93  .  .  .  .  Closing: main.go:11:16
+    94  .  .  .  }
+    95  .  .  .  Name: *ast.Ident {
+    96  .  .  .  .  NamePos: main.go:11:18
+    97  .  .  .  .  Name: "Hello"
+    98  .  .  .  }
+    99  .  .  .  Type: *ast.FuncType {
+   100  .  .  .  .  Func: main.go:11:1
+   101  .  .  .  .  Params: *ast.FieldList {
+   102  .  .  .  .  .  Opening: main.go:11:23
+   103  .  .  .  .  .  Closing: main.go:11:24
+   104  .  .  .  .  }
+   105  .  .  .  }
+   106  .  .  .  Body: *ast.BlockStmt {
+   107  .  .  .  .  Lbrace: main.go:11:26
+   108  .  .  .  .  List: []ast.Stmt (len = 1) {
+   109  .  .  .  .  .  0: *ast.ExprStmt {
+   110  .  .  .  .  .  .  X: *ast.CallExpr {
+   111  .  .  .  .  .  .  .  Fun: *ast.SelectorExpr {
+   112  .  .  .  .  .  .  .  .  X: *ast.Ident {
+   113  .  .  .  .  .  .  .  .  .  NamePos: main.go:12:2
+   114  .  .  .  .  .  .  .  .  .  Name: "fmt"
+   115  .  .  .  .  .  .  .  .  }
+   116  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+   117  .  .  .  .  .  .  .  .  .  NamePos: main.go:12:6
+   118  .  .  .  .  .  .  .  .  .  Name: "Println"
+   119  .  .  .  .  .  .  .  .  }
+   120  .  .  .  .  .  .  .  }
+   121  .  .  .  .  .  .  .  Lparen: main.go:12:13
+   122  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+   123  .  .  .  .  .  .  .  .  0: *ast.SelectorExpr {
+   124  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+   125  .  .  .  .  .  .  .  .  .  .  NamePos: main.go:12:14
+   126  .  .  .  .  .  .  .  .  .  .  Name: "g"
+   127  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 79)
+   128  .  .  .  .  .  .  .  .  .  }
+   129  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+   130  .  .  .  .  .  .  .  .  .  .  NamePos: main.go:12:16
+   131  .  .  .  .  .  .  .  .  .  .  Name: "helloPhrase"
+   132  .  .  .  .  .  .  .  .  .  }
+   133  .  .  .  .  .  .  .  .  }
+   134  .  .  .  .  .  .  .  }
+   135  .  .  .  .  .  .  .  Ellipsis: -
+   136  .  .  .  .  .  .  .  Rparen: main.go:12:27
+   137  .  .  .  .  .  .  }
+   138  .  .  .  .  .  }
+   139  .  .  .  .  }
+   140  .  .  .  .  Rbrace: main.go:13:1
+   141  .  .  .  }
+   142  .  .  }
+   143  .  .  3: *ast.FuncDecl {
+   144  .  .  .  Name: *ast.Ident {
+   145  .  .  .  .  NamePos: main.go:15:6
+   146  .  .  .  .  Name: "main"
+   147  .  .  .  .  Obj: *ast.Object {
+   148  .  .  .  .  .  Kind: func
+   149  .  .  .  .  .  Name: "main"
+   150  .  .  .  .  .  Decl: *(obj @ 143)
+   151  .  .  .  .  }
+   152  .  .  .  }
+   153  .  .  .  Type: *ast.FuncType {
+   154  .  .  .  .  Func: main.go:15:1
+   155  .  .  .  .  Params: *ast.FieldList {
+   156  .  .  .  .  .  Opening: main.go:15:10
+   157  .  .  .  .  .  Closing: main.go:15:11
+   158  .  .  .  .  }
+   159  .  .  .  }
+   160  .  .  .  Body: *ast.BlockStmt {
+   161  .  .  .  .  Lbrace: main.go:15:13
+   162  .  .  .  .  List: []ast.Stmt (len = 2) {
+   163  .  .  .  .  .  0: *ast.AssignStmt {
+   164  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+   165  .  .  .  .  .  .  .  0: *ast.Ident {
+   166  .  .  .  .  .  .  .  .  NamePos: main.go:16:2
+   167  .  .  .  .  .  .  .  .  Name: "g"
+   168  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+   169  .  .  .  .  .  .  .  .  .  Kind: var
+   170  .  .  .  .  .  .  .  .  .  Name: "g"
+   171  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 163)
+   172  .  .  .  .  .  .  .  .  }
+   173  .  .  .  .  .  .  .  }
+   174  .  .  .  .  .  .  }
+   175  .  .  .  .  .  .  TokPos: main.go:16:4
+   176  .  .  .  .  .  .  Tok: :=
+   177  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+   178  .  .  .  .  .  .  .  0: *ast.CompositeLit {
+   179  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+   180  .  .  .  .  .  .  .  .  .  NamePos: main.go:16:7
+   181  .  .  .  .  .  .  .  .  .  Name: "Greeter"
+   182  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 32)
+   183  .  .  .  .  .  .  .  .  }
+   184  .  .  .  .  .  .  .  .  Lbrace: main.go:16:14
+   185  .  .  .  .  .  .  .  .  Elts: []ast.Expr (len = 1) {
+   186  .  .  .  .  .  .  .  .  .  0: *ast.KeyValueExpr {
+   187  .  .  .  .  .  .  .  .  .  .  Key: *ast.Ident {
+   188  .  .  .  .  .  .  .  .  .  .  .  NamePos: main.go:16:15
+   189  .  .  .  .  .  .  .  .  .  .  .  Name: "helloPhrase"
+   190  .  .  .  .  .  .  .  .  .  .  }
+   191  .  .  .  .  .  .  .  .  .  .  Colon: main.go:16:26
+   192  .  .  .  .  .  .  .  .  .  .  Value: *ast.BasicLit {
+   193  .  .  .  .  .  .  .  .  .  .  .  ValuePos: main.go:16:28
+   194  .  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+   195  .  .  .  .  .  .  .  .  .  .  .  Value: "\"Hey everyone!\""
+   196  .  .  .  .  .  .  .  .  .  .  }
+   197  .  .  .  .  .  .  .  .  .  }
+   198  .  .  .  .  .  .  .  .  }
+   199  .  .  .  .  .  .  .  .  Rbrace: main.go:16:43
+   200  .  .  .  .  .  .  .  .  Incomplete: false
+   201  .  .  .  .  .  .  .  }
+   202  .  .  .  .  .  .  }
+   203  .  .  .  .  .  }
+   204  .  .  .  .  .  1: *ast.ExprStmt {
+   205  .  .  .  .  .  .  X: *ast.CallExpr {
+   206  .  .  .  .  .  .  .  Fun: *ast.SelectorExpr {
+   207  .  .  .  .  .  .  .  .  X: *ast.Ident {
+   208  .  .  .  .  .  .  .  .  .  NamePos: main.go:17:2
+   209  .  .  .  .  .  .  .  .  .  Name: "g"
+   210  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 168)
+   211  .  .  .  .  .  .  .  .  }
+   212  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+   213  .  .  .  .  .  .  .  .  .  NamePos: main.go:17:4
+   214  .  .  .  .  .  .  .  .  .  Name: "Hello"
+   215  .  .  .  .  .  .  .  .  }
+   216  .  .  .  .  .  .  .  }
+   217  .  .  .  .  .  .  .  Lparen: main.go:17:9
+   218  .  .  .  .  .  .  .  Ellipsis: -
+   219  .  .  .  .  .  .  .  Rparen: main.go:17:10
+   220  .  .  .  .  .  .  }
+   221  .  .  .  .  .  }
+   222  .  .  .  .  }
+   223  .  .  .  .  Rbrace: main.go:18:1
+   224  .  .  .  }
+   225  .  .  }
+   226  .  }
+   227  .  Scope: *ast.Scope {
+   228  .  .  Objects: map[string]*ast.Object (len = 2) {
+   229  .  .  .  "Greeter": *(obj @ 32)
+   230  .  .  .  "main": *(obj @ 147)
+   231  .  .  }
+   232  .  }
+   233  .  Imports: []*ast.ImportSpec (len = 1) {
+   234  .  .  0: *(obj @ 12)
+   235  .  }
+   236  .  Unresolved: []*ast.Ident (len = 2) {
+   237  .  .  0: *(obj @ 56)
+   238  .  .  1: *(obj @ 112)
+   239  .  }
+   240  }

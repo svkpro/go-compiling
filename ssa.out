@@ -1,0 +1,34 @@
+package main:
+  type  Greeter    struct{helloPhrase string}
+    method (Greeter) Hello()
+  func  init       func()
+  var   init$guard bool
+  func  main       func()
+
+# Name: main.init
+# Package: main
+# Synthetic: package initializer
+func init():
+0:                                                                entry P:0 S:2
+        t0 = *init$guard                                                   bool
+        if t0 goto 2 else 1
+1:                                                           init.start P:1 S:1
+        *init$guard = true:bool
+        t1 = fmt.init()                                                      ()
+        jump 2
+2:                                                            init.done P:2 S:0
+        return
+
+# Name: main.main
+# Package: main
+# Location: main.go:15:6
+# Locals:
+#   0:  t0 Greeter
+func main():
+0:                                                                entry P:0 S:0
+        t0 = local Greeter (g)                                         *Greeter
+        t1 = &t0.helloPhrase [#0]                                       *string
+        *t1 = "Hey everyone!":string
+        t2 = *t0                                                        Greeter
+        t3 = (Greeter).Hello(t2)                                             ()
+        return
